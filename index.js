@@ -1,7 +1,7 @@
 var req = require('request');
 
 module.exports = function(buf, callback) {
-	var r = req.post('http://convertonlinefree.com', {
+	var r = req.post('http://mirror1.convertonlinefree.com', {
 		encoding: null,
 		headers: {
 			'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2062.94 Safari/537.36'
