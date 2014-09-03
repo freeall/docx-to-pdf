@@ -1,12 +1,9 @@
 {
   "name": "docx-to-pdf",
   "version": "0.0.0",
-  "description": "",
+  "description": "Convert docx files to pdf using http://convertonlinefree.com",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "Tobias Baunbæk <freeall@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "request": "^2.40.0"
