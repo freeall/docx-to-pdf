@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Tobias Baunbæk <freeall@gmail.com>",
   "license": "MIT",
+  "repository": "git@github.com:freeall/docx-to-pdf.git",
   "dependencies": {
     "request": "^2.40.0"
   }
