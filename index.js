@@ -1,5 +1,9 @@
 var req = require('request');
 
+req = req.defaults({
+	agent: false
+});
+
 module.exports = function(buf, callback) {
 	var r = req.post('http://mirror1.convertonlinefree.com', {
 		encoding: null,
