@@ -15,7 +15,7 @@ module.exports = function(buf, callback) {
 	form.append('__EVENTTARGET', '');
 	form.append('__EVENTARGUMENT', '');
 	form.append('__VIEWSTATE', '');
-	form.append('ctl00$MainContent$fu', data, {
+	form.append('ctl00$MainContent$fu', buf, {
 		filename: 'output.docx',
 		contentType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 	});
@@ -28,8 +28,7 @@ module.exports = function(buf, callback) {
 if (require.main !== module) return;
 
 var fs = require('fs');
-var data = fs.readFileSync('test.docx');
 
-module.exports(data, function(err, data) {
+module.exports(fs.readFileSync('test.docx'), function(err, data) {
 	fs.writeFileSync('test.pdf', data);
 });
